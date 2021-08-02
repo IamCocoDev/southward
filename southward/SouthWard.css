@@ -1,0 +1,34 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.contenedor{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.interno{
+  background-color: pink;
+  height: 100px;
+  width: 25%;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 1000px){
+  .interno{
+    background-color: red;
+    height: 100px;
+    width: 33%;
+  }
+}
+
+@media (max-width: 400px){
+  .interno{
+    background-color: yellowgreen;
+    height: 100px;
+    width: 100%;
+  }
+}
